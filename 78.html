@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        .img1{
+            width: 33.33%;
+            float: left;
+            padding: 5px;
+        
+        }
+        .clearfix::after{
+            content: "";
+            clear: both;
+            display: table;
+
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>images side by side</h2>
+    <p>float images side by side</p>
+     
+    <div class="clearfix">
+        <div class="img1">
+            <img src="download.jpg"  alt="Image 1" style="width: 100%;">
+
+        </div>
+
+        <div class="img2">
+            <img src="download.jpg" alt="italy" style="width: 100%;">
+        </div>
+
+        <div class="img3">
+            <img src="download.jpg" alt="monutain" style="width: 100%;">
+        </div>
+    </div>
+
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa omnis et magnam neque dolores similique maiores architecto dolore ipsam. Quae ut tempore fugit ea hic, ullam rerum quos accusamus fugiat?</p>
+</body>
+</html>
