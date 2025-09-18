@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>the mask img property</h1>
+
+    <h3>an svg mask layer (formed a circle)</h3>
+
+    <svg width="600" height="400">
+       <mask id="svgmask2">
+        <circle fill="#ffffff" cx="75" cy="75" r="75"/>
+        <circle fill="#ffffff" cx="80" cy="260" r="75"/>
+        <circle fill="#ffffff" cx="270" cy="160" r="75"/>
+       </mask>
+        <image href="download.jpg" mask="url(#svgmask2)" width="600" height="400"/><image/>
+    </svg>
+    <h3>orginal img</h3>
+    <img src="download.jpg" alt="onulla" width="600" height="400" >
+
+    
+</body>
+</html>

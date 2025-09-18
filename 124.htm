@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .container{
+            position: relative;
+            width: 100%;
+            max-width: 400px;
+        }
+        
+        .container img{
+            width: 100%;
+            height: auto;
+        }
+        .container .btn{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            -ms-transform: translate(-50%,-50%);
+            background-color:white;
+            color: black;
+            font-size: 16px;
+            padding: 16px 30px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            text-align: center;
+        }
+        .container .btn:hover{
+            background-color: black;
+            color: white;
+        }
+
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>button on img</h2>
+
+    <p>add a button on a img</p>
+
+    <div class="container">
+        <img src="download.jpg" alt="onulla" style="width: 100%;">
+        <button class="btn">
+            button
+        </button>
+    </div>
+    
+</body>
+</html>
