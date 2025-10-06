@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            font-family: sans-serif;
+            font-size: xx-large;
+            margin: 0;
+        }
+        .first img {
+            height: 100vh;
+            width: 100%;
+            
+        }
+        .first .logo{
+            position: absolute;
+            left: 12%;
+            top: -40%;
+            width: 15%;
+            
+            
+           
+           
+        }
+        .logo img{
+            width: 80%;
+            aspect-ratio: 4/2;
+            object-fit: contain;
+           
+            
+        }
+        .listbar{
+            margin-left: 40vw;
+            position: absolute;
+            top: 2%;
+            right: 10%;
+            
+        }
+         .listbar li {
+           list-style-type: none;
+           padding: 15px;
+           display: inline-block;
+           
+            
+        }
+        .listbar a{
+            text-decoration: none;
+            color: rgb(249, 235, 235);
+            font-size: medium;
+           
+            
+
+        }
+        a:hover{
+            color: blue;
+            transition: 0.2s;
+        }
+
+        .ship{
+            position: absolute;
+            top:40% ;
+            color: aliceblue;
+            justify-content: center;
+            left: 30%;
+           
+
+        }
+        .ship p{
+            color: gray;
+            text-align: center;
+            justify-content: center;
+           
+           
+        }
+        .ship span{
+            color: aqua;
+        }
+        .container1{
+            position: absolute;
+            background-color: rgb(77, 33, 16);
+            left: 20%;
+            bottom: -40px;
+            display: flex;
+            gap: 20px;
+            align-self: center;
+            justify-content: center;
+            width: 60%;
+            height: 80px;
+            box-shadow: 1px 1px 5px 1px gray;
+            border-radius: 3px;
+            font-size: medium;
+            color: rgb(129, 124, 124);
+
+        }
+        .container1 .group{
+            display: grid;
+            place-items: center;
+            padding: 10PX 0px;
+            transition: 0.9S;
+
+        }
+        .container1 .line{
+            width: 1.5px;
+            margin-top: 25px;
+            height: 30px;
+            background: rgb(108, 99, 99);
+        }
+        .container1 .group:hover{
+            position: relative;
+            top: -15px;
+            background: rgb(1, 1, 26);
+            box-shadow: 2px 2px 7px 2px rgb(236, 229, 229);
+            width: 100px;
+            height: 110px;
+            border-radius: 20px;
+            color: rgb(243, 239, 236);
+
+
+        }
+        .container1 .img{
+            width: 22px;
+            transition: 0.10s;
+        }
+        .container1 .group:hover img{
+            width: 35px;
+        }
+        .second{
+            text-align: center;
+            padding: 100px;
+          
+            
+        }
+        div p{
+            display: inline;
+           padding: 30px;
+        }
+        .circle-1{
+            height: 15px;
+            width: 15px;
+            border: 2px solid black;
+            border-radius: 50px;
+            position: absolute;
+            left: 36%;
+            top: 140%;
+        }
+        .circle-2{
+            height: 30px;
+            width: 30px;
+            border:2px solid black ;
+            border-radius: 50px;
+            position: absolute;
+            left: 50%;
+            top:140% ;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .blue-dot{
+            height: 15px;
+            width: 15px;
+            border: 2px solid rgb(48, 10, 217);
+            border-radius: 50px;
+            background: blue;
+
+        }
+        .circle-3{
+            height: 15px;
+            width: 15px;
+            border: 2px solid black;
+            border-radius: 50px;
+            position: absolute;
+            right: 37%;
+            top: 140%;
+        }
+
+        .bottom line{
+            height: 0.10px;
+            width: 250px;
+            margin: auto;
+            background: rgb(13, 9, 9);
+            position: absolute;
+          
+
+        }
+         .second.maain{
+            display: flex;
+            gap: 30px;
+        }
+         .second.images{
+            position:relative;
+            width: 50%;
+
+            
+        }
+        .second img{
+            width: 250px;
+        }
+
+        .second .img1{
+            position: absolute;
+            top: 155%;
+            left: 18%;
+            width: 230px;
+
+
+        }
+        .second .img3{
+            position: absolute;
+            top: 152%;
+            left: 20%;
+        }
+
+        .second .img2{
+            position: absolute;
+            top: 160%;
+            left:21%;
+           
+        }
+        .second .para{
+            position: absolute;
+            justify-content: left;
+         font-size: small;
+            left: 38%;
+            right: 18%;
+            top: 155%;
+            color: rgb(108, 105, 105);
+            font-weight: lighter;
+            text-align: center;
+        }
+        .second .para1{
+             position: absolute;
+            justify-content: left;
+         font-size: medium;
+            left: 38%;
+            right: 18%;
+            top: 170%;
+            color: rgb(27, 11, 11);
+            font-weight: bold;
+            text-align: center;
+
+        }
+        .third{
+            height: 100vh;
+            width: 100%;
+        }
+
+        .third h3{
+            position: absolute;
+           top: 200%;
+           left: 18%;
+           right: 59%;
+           font-size: 35px;
+          align-content: center;
+          text-align: left;
+           
+
+        }
+        .third span{
+            color: rgb(21, 115, 186);
+        }
+        .third h2{
+            position: absolute;
+            top: 213%;
+            left: 18%;
+            right: 59%;
+            font-size: 33px;
+            text-align: left;
+            align-content: center;
+            font-weight: bold;
+        }
+        .third p{
+            position: absolute;
+            top: 225%;
+            left: 16%;
+            right: 57%;
+            font-size: large;
+            color: rgb(179, 168, 168);
+            padding: 25px;
+        }
+        .third img{
+            position: absolute;
+            top: 205%;
+            left: 43%;
+            height: 130px;
+            width: 260px;
+            border-radius: 30px;
+        }
+
+         .photo-1 h2{
+            position: absolute;
+            top: 221%;
+            left: 44%;
+            width: 100%;
+            font-size:x-large;
+            right: 50%;
+            font-weight: lighter;
+            color: rgb(27, 27, 95);
+            
+            
+        }
+        .photo-1 p{
+            position: absolute;
+            left: 43%;
+            width: 20%;
+            text-align: left;
+            right: 40%;
+            font-size: medium;
+
+        }
+        .photo-2 img{
+            position: absolute;
+            top: 205%;
+            left: 63%;
+            height: 130px;
+            width: 260px;
+            border-radius: 30px;
+
+        }
+        .photo-2 h1{
+            position: absolute;
+            top: 221%;
+            left: 64%;
+            width: 100%;
+            font-size:x-large;
+            right: 50%;
+             font-weight: lighter; 
+            color: rgb(5, 5, 99);
+
+        }
+         .photo-2 p{
+            position: absolute;
+            left: 64%;
+            width: 20%;
+            font-size: large ;
+         }
+         .four{
+            width: 100%;
+            height: 50vh;background-color: rgb(6, 6, 94);
+            height: 100vh;
+         }
+         .one{
+            color: white;
+            left: 17%;
+            position: absolute;
+             top: 260%; */
+         }
+         .one p{
+            font-size:larger;
+            font-weight: bolder;
+            text-align: left;
+            justify-content: left;
+         }
+         .one .match{
+            left: 17%;
+            position: absolute;
+         }
+         .one span{
+            font-weight: 50;
+         }
+         .box1{
+            height: 180px;
+            width: 300px;
+            border: 3px solid white;
+            position: absolute;
+            left: 40%;
+            top: 270%;
+            grid-template-columns: repeat(3,1fr);
+
+
+
+         }
+
+         .box2{
+            height: 180px;
+            width: 300px;
+            border: 3px solid white;
+            position: absolute;
+            left: 63%;
+            top: 270%;
+            grid-template-columns: repeat(3,1fr);
+
+
+         }
+         .box3{
+            height: 180px;
+            width: 300px;
+            border: 3px solid white;
+            position: absolute;
+            left: 18%;
+            top: 310%;
+            grid-template-columns: repeat(3,1fr);
+
+
+         }
+         .box4{
+            height: 180px;
+            width: 300px;
+            border: 3px solid white;
+            position: absolute;
+            left: 40%;
+            top: 310%;
+            grid-template-columns: repeat(3,1fr);
+
+
+         }
+         .box5{
+            height: 180px;
+            width: 300px;
+            border: 3px solid white;
+            position: absolute;
+            left: 63%;
+            top: 310%;
+            grid-template-columns: repeat(3,1fr);
+
+
+         }
+         .box1 h2
+         {
+            font-size: large;
+            color: white;
+            margin-left: 10%;
+            margin-top: 10%;
+         }
+         .box1 p{
+            font-size: medium;
+            color: aliceblue;
+            text-align: left;
+            justify-content: left;
+            position: absolute;
+            left: 5%;
+            top: 15%;
+            font-weight: lighter;
+         }
+         .box2 h2
+         {
+            font-size: large;
+            color: white;
+            margin-left: 10%;
+            margin-top: 10%;
+         }
+         .box2 p{
+            font-size: medium;
+            color: aliceblue;
+            text-align: left;
+            justify-content: left;
+            position: absolute;
+            left: 5%;
+            top: 15%;
+            font-weight: lighter;
+         }
+          .box3 h2
+         {
+            font-size: large;
+            color: white;
+            margin-left: 10%;
+            margin-top: 10%;
+         }
+         .box3 p{
+            font-size: medium;
+            color: aliceblue;
+            text-align: left;
+            justify-content: left;
+            position: absolute;
+            left: 5%;
+            top: 15%;
+            font-weight: lighter;
+         }
+          .box4 h2
+         {
+            font-size: large;
+            color: white;
+            margin-left: 10%;
+            margin-top: 10%;
+         }
+         .box4 p{
+            font-size: medium;
+            color: aliceblue;
+            text-align: left;
+            justify-content: left;
+            position: absolute;
+            left: 5%;
+            top: 15%;
+            font-weight: lighter;
+         }
+          .box5 h2
+         {
+            font-size: large;
+            color: white;
+            margin-left: 10%;
+            margin-top: 10%;
+         }
+         .box5 p{
+            font-size: medium;
+            color: aliceblue;
+            text-align: left;
+            justify-content: left;
+            position: absolute;
+            left: 5%;
+            top: 15%;
+            font-weight: lighter;
+         }
+
+
+
+
+
+
+         
+
+        
+        
+    </style>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.html">
+</head>
+<body>
+<div class="main">
+    <div class="first">
+        <img src="banner.png" alt="">
+
+        <div class=" logo">
+            <img src="logo.png" alt="">
+        </div>
+        <div class="listbar">
+            <ul>
+               <li><a href="">Home</a></li>
+               <li><a href="">About</a></li>
+                <li><a href="">Service</a></li>
+                <li><a href="">work</a></li>
+                <li><a href="">contact</a></li>
+                
+            </ul>
+        </div>
+
+        <div class="ship">
+            <P>SHIP ANYTHING</P>
+            <h2><span>AROUND </span>THE WORLD</h2>
+        </div>
+    </div>
+</div>
+
+<div class="container1">
+
+    <div class="group">
+        <img src="key.png" alt="">
+         service title
+    </div>
+    <div class="line"></div>
+
+    <div class="group">
+        <img src="add.png" alt="">
+        service title
+    </div>
+    <div class="line"></div>
+
+    <div class="group">
+        <img src="shield (1).png" alt="">
+        service title
+
+    </div>
+    <div class="line"></div>
+    <div class="group">
+        <img src="browser-(1).png" alt="">
+        service title
+        </div>
+        <div class="line"></div>
+        <div class="group">
+            <img src="password (2).png" alt="">
+            service title
+        </div>
+</div>
+
+<div class="second">
+    <h3 style="color: black;">Why Choose Us</h3>
+
+ <div style="color: black;">
+  <p>Services</p>
+  <p>Services</p>
+  <p>Services</p>
+   </div>
+
+
+ <div class="circles">
+    <div class="circle-1"></div>
+    <div class="bottom line"> </div>
+    <div class="circle-2"><div class="blue-dot"></div></div>
+    <div class="circle-3"></div>
+ </div>
+
+
+ <div class="maain">
+
+    <div class="images">
+
+        <img class="img1" src="srv1.png" alt="">
+        <img class="img2" src="srv3.png" alt="">
+        <img class="img3"  src="srv2.png" alt="">
+    </div>
+   
+    <div class="para">
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi temporibus doloribus ullam porro, et ex ipsa corporis, laboriosam quia inventore suscipit assumenda sequi beatae explicabo nulla iusto rerum. Expedita, nemo!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum nesciunt sed culpa cumque a! Vel accusamus aperiam expedita totam reprehenderit.
+        </p>
+
+    </div>
+
+    <div class="para1">
+     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Provident facere culpa asperiores, maiores totam veritatis, 
+        nemo expedita maxime voluptates molestiae a, consequuntur unde
+         hic officia quam? Quod qui similique a.</p>
+    </div>
+
+
+
+
+ </div>
+</div>
+
+
+<div class="third">
+
+    <div class="text">
+        <h3>Fright Company With a <span>Diffrence</span></h3>
+            <h2>Fright COMPANY INNOVATION</h2>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem possimus molestiae atque neque accusamus odit itaque ex excepturi,
+                 <!-- assumenda molestias distinctio omnis nesciunt sed eum exercitationem ea aliquid soluta?  -->
+                </p>
+
+                <div class="photo-1">
+
+                    <img src="2.png" alt="">
+
+                    <h2> What is lorem ipsum ?</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, dicta.
+                        Lorem ipsum dolor sit amet consectetur 
+                    </p>
+                </div>
+       
+    </div>
+       
+
+    <div class="photo-2">
+
+        <img src="1.png" alt="">
+
+        <h1>What is llorem ipsum ?</h1>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, aliquam!</p>
+
+    </div>
+
+
+</div>
+
+
+
+<div class="four">
+
+
+    <div class="one">
+
+        <p class="match">Unmatched <br>
+            service. <br>
+        <span>Unmatched <br>
+            Exellence</span></p>
+
+    </div>
+       
+
+    <div class="box1">
+
+        <h2>What is lorem ipsum ?</h2>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis, inventore.</p>
+
+    </div>
+
+    <div class="box2"><h2>What is lorem ipsum ?</h2>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis, inventore.</p></div>
+
+    <div class="box3"><h2>What is lorem ipsum ?</h2>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis, inventore.</p></div>
+     
+    <div class="box4"><h2>What is lorem ipsum ?</h2>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis, inventore.</p></div>
+
+    <div class="box5"><h2>What is lorem ipsum ?</h2>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis, inventore.</p></div>
+</div>
+
+
+</body>
+</html>
